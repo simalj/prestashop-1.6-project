@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2025-04-03 19:38:27
+<?php /* Smarty version Smarty-3.1.19, created on 2025-04-05 19:03:33
          compiled from "/var/www/html/themes/default-bootstrap/layout.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:32661829467eee3b398ce26-55767213%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:25401210767f162658ffd67-94035346%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '32661829467eee3b398ce26-55767213',
+  'nocache_hash' => '25401210767f162658ffd67-94035346',
   'function' => 
   array (
   ),
@@ -29,9 +29,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_67eee3b3996799_43387315',
+  'unifunc' => 'content_67f1626590df27_52256297',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_67eee3b3996799_43387315')) {function content_67eee3b3996799_43387315($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_67f1626590df27_52256297')) {function content_67f1626590df27_52256297($_smarty_tpl) {?>
 <?php $_smarty_tpl->tpl_vars['left_column_size'] = new Smarty_variable(0, null, 0);?><?php $_smarty_tpl->tpl_vars['right_column_size'] = new Smarty_variable(0, null, 0);?>
 <?php if (isset($_smarty_tpl->tpl_vars['HOOK_LEFT_COLUMN']->value)&&trim($_smarty_tpl->tpl_vars['HOOK_LEFT_COLUMN']->value)&&!$_smarty_tpl->tpl_vars['hide_left_column']->value) {?><?php $_smarty_tpl->tpl_vars['left_column_size'] = new Smarty_variable(3, null, 0);?><?php }?>
 <?php if (isset($_smarty_tpl->tpl_vars['HOOK_RIGHT_COLUMN']->value)&&trim($_smarty_tpl->tpl_vars['HOOK_RIGHT_COLUMN']->value)&&!$_smarty_tpl->tpl_vars['hide_right_column']->value) {?><?php $_smarty_tpl->tpl_vars['right_column_size'] = new Smarty_variable(3, null, 0);?><?php }?>
