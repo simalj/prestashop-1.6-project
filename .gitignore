@@ -1,0 +1,84 @@
+# Ignorovanie systémových súborov
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignorovanie súborov a priečinkov WSL
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignorovanie Docker súborov
+docker-compose.override.yml
+.env
+
+# Ignorovanie cache a dočasných súborov PrestaShopu
+/prestashop/cache/*
+!/prestashop/cache/index.php
+/prestashop/log/*
+!/prestashop/log/index.php
+/prestashop/tmp/*
+!/prestashop/tmp/index.php
+
+# Ignorovanie modulov a prekladov generovaných PrestaShopom
+/prestashop/modules/*/translations/*
+/prestashop/modules/*/mails/*
+/prestashop/themes/*/cache/*
+/prestashop/themes/*/translations/*
+/prestashop/themes/*/mails/*
+
+# Ignorovanie nahraných súborov
+/prestashop/img/tmp/*
+/prestashop/img/cms/*
+/prestashop/img/p/*
+/prestashop/img/su/*
+/prestashop/img/co/*
+/prestashop/img/m/*
+/prestashop/img/scenes/*
+/prestashop/img/st/*
+/prestashop/img/l/*
+/prestashop/img/ot/*
+/prestashop/img/os/*
+/prestashop/img/c/*
+/prestashop/img/u/*
+/prestashop/img/bo/*
+/prestashop/img/brand/*
+/prestashop/img/supplier/*
+/prestashop/img/tmp/*
+/prestashop/img/pack/*
+
+# Ignorovanie logov a dočasných súborov
+*.log
+*.cache
+*.tmp
+
+# Ignorovanie súborov IDE
+.idea/
+.vscode/
+*.iml
+
+# Ignorovanie súborov operačných systémov
+*.~lock.*
+*.bak
+*.swp
+*.swo
+
+# Ignorovanie záloh a kompilovaných súborov
+*.bak
+*.old
+*.pyc
+*.pyo
+*.class
+*.min.js
+*.min.css
+
+# Ignorovanie nahraných súborov používateľov
+/prestashop/upload/*
+/prestashop/download/*
+
+# Ignorovanie databázových dumpov
+*.sql
+*.sql.gz
+*.tar.gz
+*.rar
