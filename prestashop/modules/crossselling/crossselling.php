@@ -129,7 +129,9 @@ class CrossSelling extends Module
         $q_orders = 'SELECT o.id_order
         FROM '._DB_PREFIX_.'orders o
         LEFT JOIN '._DB_PREFIX_.'order_detail od ON (od.id_order = o.id_order)
-        WHERE o.valid = 1 AND od.product_id IN ('.implode(',', $products_id).')';
+        WHERE o.valid = 1 
+        AND od.product_id IN ('.implode(',', $products_id).')
+        AND o.date_add >= DATE_SUB(NOW(), INTERVAL 2 MONTH)'; // Pridanie podmienky na posledné 2 mesiace
         $orders = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($q_orders);
 
         $final_products_list = array();
